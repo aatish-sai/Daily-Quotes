@@ -68,6 +68,7 @@
 
 </body>
 <script>
+  var quote,author;
   var d = new Date();
   var i = d.getYear() + d.getMonth() + d.getDate();
   console.log(d.getYear());
@@ -77,12 +78,12 @@
     console.log(data);
     i = i % data.quotes.length;
     console.log(i);
-     var quote = data.quotes[i].quote;
-     var author = data.quotes[i].author;
+     quote = data.quotes[i].quote;
+     author = data.quotes[i].author;
      console.log(quote);
      console.log(author);
-    document.getElementById("qoute").innerHTML = quote;
-    document.getElementById("author").innerHTML = author;
   });
+  document.getElementById("qoute").innerHTML = quote;
+  document.getElementById("author").innerHTML = author;
 </script>
 </html>
