@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Daily Quotes</title>
+
+  <meta name="description" content="Get new quotes every day. Make your day awesome. Share with your friends." />
+  <meta name="keywords" content="daily,quotes,aatish,sai,nepal,awesome,share,social,friend" />
+
+  <meta property="og:url" content="quote.aatish.me" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="title" />
+  <meta property="og:description" content="desp" />
+  <meta property="og:image" content="http://#" />
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1110832562340614',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <section class="intro">
+  <div class="content">
+    <div class="title">Daily Quotes</div>
+    <h1 id="quote">Quote goes here.</h1>
+    <p id="author">Author Name</p>
+
+    <div class="social">
+      <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="content">
+    <h1>See the <a href="http://github.com/aatish-sai/">code.</a></h1>
+    <div class="fb-share-button" data-href="quote.aatish.me" data-layouts="button_count" data-size="large" data-mobile-iframe="false">
+      <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/share/sharer.php?u=https%3a%2F%2Faatish.me%2F&amp;src=sdkpreparse">share</a>
+    </div>
+ </div>
+</section>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+<footer>
+  Daily Quotes 2016 | Made by <a href="http://www.twitter.com/meatish">@meatish</a>
+</footer>
+
+</body>
+</html>
