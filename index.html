@@ -44,9 +44,17 @@
     <p id="author">Author Name</p>
 
     <script>
+      var d = new Date();
+      var i = d.getYear() + d.getMonth() + d.getDate();
+      console.log(d.getYear());
+      console.log(d.getMonth());
+      console.log(d.getDate());
       $.getJSON('https://aatish.me/project/dailyquotes/quotes.json',function(data){
-        var quote = data.quotes[0].quote;
-        console.log(quote);
+        i = i % data.quotes.length;
+        console.log(i);
+         var quote = data.quotes[i].quote;
+        document.getElementById('qoute').innerHTML = quote;
+        document.getElementById('author').innerHTML = author;
       });
     </script>
 
