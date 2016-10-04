@@ -68,22 +68,24 @@
 
 </body>
 <script>
-  var quote,author;
-  var d = new Date();
-  var i = d.getYear() + d.getMonth() + d.getDate();
-  console.log(d.getYear());
-  console.log(d.getMonth());
-  console.log(d.getDate());
-  $.getJSON('https://aatish.me/project/dailyquotes/quotes.json',function(data){
-    console.log(data);
-    i = i % data.quotes.length;
-    console.log(i);
-     quote = data.quotes[i].quote;
-     author = data.quotes[i].author;
-     console.log(quote);
-     console.log(author);
-  });
-  document.getElementById("qoute").innerHTML = quote;
-  document.getElementById("author").innerHTML = author;
+  windows.onload = function(){
+    var quote,author;
+    var d = new Date();
+    var i = d.getYear() + d.getMonth() + d.getDate();
+    console.log(d.getYear());
+    console.log(d.getMonth());
+    console.log(d.getDate());
+    $.getJSON('https://aatish.me/project/dailyquotes/quotes.json',function(data){
+      console.log(data);
+      i = i % data.quotes.length;
+      console.log(i);
+       quote = data.quotes[i].quote;
+       author = data.quotes[i].author;
+       console.log(quote);
+       console.log(author);
+    });
+    document.getElementById("qoute").innerHTML = quote;
+    document.getElementById("author").innerHTML = author;
+  }
 </script>
 </html>
