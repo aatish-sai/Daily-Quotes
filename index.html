@@ -45,7 +45,8 @@
 
     <script>
       $.getJSON('https://aatish.me/project/dailyquotes/quotes.json',function(data){
-        console.log(data);
+        var quote = data.quotes[0].quote;
+        console.log(quote);
       });
     </script>
 

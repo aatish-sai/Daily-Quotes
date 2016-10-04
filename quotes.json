@@ -1,10 +1,14 @@
-[
-  {
-    "quote": "The true measure of friendship is not how you feel about someone, its how they make you feel about yourself.",
-    "author": "Unknown"
-  },
-  {
-    "quote": "Finding love is hard enough, why worry about what color that love is.",
-    "author": "Unknown"
-  }
-]
+{
+
+  "quotes" :
+  [
+    {
+      "quote": "The true measure of friendship is not how you feel about someone, its how they make you feel about yourself.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Finding love is hard enough, why worry about what color that love is.",
+      "author": "Unknown"
+    }
+  ]
+}
