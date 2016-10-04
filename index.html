@@ -43,6 +43,12 @@
     <h1 id="quote">Quote goes here.</h1>
     <p id="author">Author Name</p>
 
+    <script>
+      $.getJSON('https://aatish.me/project/dailyquotes/quotes.json',function(data){
+        console.log(data);
+      });
+    </script>
+
     <div class="social">
       <div class="fb-share-button"
 		    data-href="https://aatish.me/project/dailyquotes/"
@@ -55,11 +61,7 @@
   </div>
 </section>
 
-<script>
-  $.getJSON('https://aatish.me/project/dailyquotes/quotes.json',function(data){
-    console.log(data);
-  });
-</script>
+
 
 <section>
   <div class="content">
