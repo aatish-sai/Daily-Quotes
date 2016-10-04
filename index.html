@@ -69,7 +69,6 @@
 </body>
 <script>
   window.onload = function(){
-    var quote,author;
     var d = new Date();
     var i = d.getYear() + d.getMonth() + d.getDate();
     console.log(d.getYear());
@@ -79,13 +78,16 @@
       console.log(data);
       i = i % data.quotes.length;
       console.log(i);
-       quote = data.quotes[i].quote;
-       author = data.quotes[i].author;
+       var quote = data.quotes[i].quote;
+       var author = data.quotes[i].author;
+
+       document.getElementsByTagName("h1")[0].innerHTML = quote;
+       document.getElementsByTagName("p")[0].innerHTML = author;
+
        console.log(quote);
        console.log(author);
     });
-    document.getElementsByTagName("h1")[0].innerHTML = quote;
-    document.getElementsByTagName("p")[0].innerHTML = author;
+
   }
 </script>
 </html>
