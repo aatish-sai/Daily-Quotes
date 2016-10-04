@@ -53,8 +53,9 @@
         i = i % data.quotes.length;
         console.log(i);
          var quote = data.quotes[i].quote;
-        document.getElementById('qoute').innerHTML = quote;
-        document.getElementById('author').innerHTML = author;
+         var author = data.quotes[i].author;
+        document.getElementById("qoute").innerHTML = quote;
+        document.getElementById("author").innerHTML = author;
       });
     </script>
 
